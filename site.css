@@ -1,7 +1,28 @@
 .container {
-  width: 36em;
+  width: 60em;
   margin: auto;
 }
 .heading {
   text-align: center;
+}
+
+/* =media object */
+.media {}
+.media:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.media_img {
+  float: left;
+  margin-right: 24px;
+}
+.media_body {
+  overflow: hidden;
+}
+
+/* =box */
+.box {
+  border: 1px solid #efefef;
+  margin: 10px 0;
 }
