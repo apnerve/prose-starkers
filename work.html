@@ -1,0 +1,14 @@
+---
+layout: default
+permalink: work/
+---
+<div>
+  <ul>
+  {% for item in site.categories.work limit:1000 %}
+    <li>
+      <img src="{{item.image}}" />
+      {{item.title}}
+    </li>
+  {% endfor %}
+  </ul>
+</div>
