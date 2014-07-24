@@ -1,0 +1,17 @@
+---
+layout: default
+section: blog
+---
+
+<div>
+  <ul>
+  {% for item in site.categories.blog limit:1000 %}
+    <li>
+      <a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}} <span class='date'>&#126; {{item.date | date:"%b %d"}}</span></a>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
+<hr />
+
+{% include rss-link.html %}
