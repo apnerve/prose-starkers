@@ -1,4 +1,4 @@
-baseurl: 
+baseurl: /prose-starkers
 permalink: pretty
 markdown: rdiscount
 prose:
